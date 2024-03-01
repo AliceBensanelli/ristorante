@@ -1,0 +1,11 @@
+
+.card{
+    border: solid 1px black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prenotato {
+    background-color:  red;
+    color: white;
+}

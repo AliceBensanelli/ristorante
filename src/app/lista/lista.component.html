@@ -1,0 +1,15 @@
+
+<div *ngFor="let tavolo of tavoli" class="card" [ngClass]="{prenotato: tavolo.riservato}">
+    <p>Numero: {{ tavolo.numero }}</p>
+    <p>Posti a sedere: {{tavolo.posti}}</p>
+    <p>Rotondo: {{tavolo.rotondo ? 'Si' : 'No'}}</p>
+    <p>Riservato: {{tavolo.riservato}}</p>
+
+    <button (click)="elimina(tavolo.numero)">elimina</button>
+
+    <button (click)="togglePrenotazione(tavolo.numero)">
+        
+        {{ tavolo.riservato ? 'Rimuovi Prenotazione' : 'Prenota'}} <!--Prenota -->
+    </button>
+
+</div>
